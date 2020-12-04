@@ -1,7 +1,7 @@
 'use strict';
 let todoData = localStorage.getItem('user');
-
 todoData = JSON.parse(todoData);
+
 
 const todoControl = document.querySelector('.todo-control'),
     headerInput = document.querySelector('.header-input'),
@@ -11,8 +11,8 @@ const todoControl = document.querySelector('.todo-control'),
 
 console.log(todoData);
 
-if (todoData) {
-    let todoData = [];
+if (todoData === null) {
+     todoData =new Array();
 }
 
 
